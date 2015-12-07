@@ -88,8 +88,7 @@
     myVar.toString() +
     '</li>');
 
-  var myVar = new myVarTypes[
-    'A type']();
+  var myVar = new myVarTypes['A type']();
 
   callFunc(
     'An arg',
@@ -106,11 +105,24 @@
     return;
   }
 
-  var nestedObjects = [{
+  var arrayOfObjects = [{
     a: true
   }, {
     a: false
   }];
+
+  var nestedObjects = {
+    one: {
+      fish: {
+        two: 'fish'
+      }
+    },
+    red: {
+      fish: {
+        blue: 'fish'
+      }
+    }
+  };
 
 }).call(this);
 
